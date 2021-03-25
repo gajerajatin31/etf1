@@ -515,6 +515,7 @@ a:active {
 .service-box-num {
     position: relative;
     z-index: 2;
+    cursor: pointer;
 }
 
 .service-section {
@@ -888,6 +889,7 @@ a:active {
 .info-box:hover .hover-sticker {
     right: -20px;
     bottom: -20px;
+    cursor: pointer;
 }
 
 .info-offer-section {
@@ -1118,7 +1120,7 @@ a:active {
         font-size: 22px;
     }
     .service-bottom-icon {
-        transform: translate(-358%, -20%);
+        transform: translate(-351%, -20%);
     }
     .service-section {
         padding-top: 140px;
@@ -1932,5 +1934,216 @@ a:active {
     }
     .blue-block {
         width: 290px;
+    }
+}
+
+#toggle h4 {
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    left: -60px;
+    top: 5px;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-prev {
+    padding: 0px;
+    font-size: 0px;
+}
+
+.owl-prev::before {
+    content: "\f177";
+    display: block;
+    position: absolute;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #cfcfcf;
+    width: 45px;
+    height: 45px;
+    line-height: 44px;
+    border: 2px solid #cfcfcf;
+    border-radius: 50%;
+}
+
+.owl-next {
+    padding: 0px;
+    font-size: 0px;
+}
+
+.owl-next::before {
+    content: "\f178";
+    display: block;
+    position: absolute;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #cfcfcf;
+    width: 45px;
+    height: 45px;
+    line-height: 44px;
+    border: 2px solid #cfcfcf;
+    border-radius: 50%;
+}
+
+.owl-next:hover:active:visited,
+.owl-prev:hover:active:visited {
+    border: 2px solid #cfcfcf;
+}
+
+
+/* RESPONSIVE CSS START */
+
+@media (min-width: 1700px) and (max-width: 1920px) {
+    .owl-nav {
+        transform: translate(-48%, -12.4vh);
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1698.9px) {}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+    .owl-nav {
+        transform: translate(-48%, -12.4vh);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .owl-nav {
+        transform: translate(-48%, -12.4vh);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .owl-nav {
+        top: 70%;
+        left: 50%;
+        transform: translate(-52%, -100%);
+    }
+    #toggle h4 {
+        color: #0fa5d2;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    #toggle h4 {
+        color: #0fa5d2;
+    }
+}
+
+.owl-nav {
+    width: 158px;
+}
+
+.owl-prev {
+    border: none;
+}
+
+.owl-next {
+    border: none;
+}
+
+.owl-dot {
+    border: none;
+}
+
+.banner-search-box input {
+    color: #fff;
+}
+
+.banner-search-box-btn {
+    color: #0fa5d2 !important;
+    border: 1px solid #0fa5d2 !important;
+}
+
+.banner-right-content {
+    z-index: auto;
+}
+
+.banner-animate-globe-img {
+    z-index: 9;
+}
+
+
+/* RESPONSIVE CSS START */
+
+@media (min-width: 1700px) and (max-width: 1920px) {
+    .slider-content {
+        padding-right: 20em;
+    }
+    .owl-nav {
+        transform: translate(-48%, -12.4vh);
+    }
+    .owl-dots {
+        transform: translate(34vw, 36vh);
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1698.9px) {
+    .slider-content {
+        padding-right: 20em;
+    }
+    .owl-nav {
+        transform: translate(-47%, -12.4vh);
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+    .owl-nav {
+        transform: translate(-50%, -12vh);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .owl-dots {
+        transform: translate(34.4vw, 15vh);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .owl-nav {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    .owl-dots {
+        top: 70%;
+        left: 50%;
+        transform: translate(12%, -130%);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .owl-nav {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    .owl-dots {
+        top: 70%;
+        left: 50%;
+        transform: translate(12%, -130%);
+    }
+    .banner-search-box-btn {
+        margin: 0.5rem 0rem !important;
+    }
+    .banner-search-box {
+        padding: 0px 7px 0px 15px;
+    }
+    .section-sub-title h5 {
+        font-size: 14px;
     }
 }
