@@ -1,0 +1,116 @@
+.owl-carousel {
+    z-index: 9;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(13.3vw, 37.2vh);
+    z-index: 9;
+    width: 145px;
+}
+
+.owl-prev {
+    float: left;
+    font-size: 0px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.owl-prev {
+    content: "";
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.owl-next {
+    float: right;
+    font-size: 0px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.owl-next {
+    content: "";
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.owl-dots {
+    counter-reset: slides-num;
+    /* Initialize counter. */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 15px;
+    transform: translate(34vw, 36vh);
+}
+
+.owl-dots::before {
+    width: 80%;
+    height: 2px;
+    background: #cfcfcf;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-127%, -50%);
+}
+
+.owl-dots:after {
+    content: counter(slides-num);
+    /* get total number of items - more info on http://www.sitepoint.com/a-little-known-way-to-replace-some-scripts-with-css-counters/ */
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    vertical-align: middle;
+    color: #cfcfcf;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #cfcfcf;
+    line-height: 44px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.owl-dot {
+    display: inline-block;
+    counter-increment: slides-num;
+    /* Increment counter */
+    margin-right: 5px;
+}
+
+.owl-dot span {
+    display: none;
+}
+
+.owl-dot.active:before {
+    content: counter(slides-num) "";
+    /* Use the same counter to get current item. */
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    position: absolute;
+    left: -80px;
+    top: 0;
+    color: #cfcfcf;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #cfcfcf;
+    line-height: 44px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.info {
+    text-align: center;
+    margin-top: 110px;
+}

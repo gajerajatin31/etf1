@@ -1,0 +1,179 @@
+.owl-carousel {
+    z-index: 9;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -215%);
+    z-index: 9;
+    width: 145px;
+}
+
+.owl-prev {
+    float: left;
+    font-size: 0px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.owl-prev {
+    content: "";
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.owl-next {
+    float: right;
+    font-size: 0px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.owl-next {
+    content: "";
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.owl-dots {
+    counter-reset: slides-num;
+    /* Initialize counter. */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 15px;
+    transform: translate(34.2vw, 36vh);
+}
+
+.owl-dots::before {
+    width: 80%;
+    height: 2px;
+    background: #cfcfcf;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-127%, -50%);
+}
+
+.owl-dots:after {
+    content: counter(slides-num);
+    /* get total number of items - more info on http://www.sitepoint.com/a-little-known-way-to-replace-some-scripts-with-css-counters/ */
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    vertical-align: middle;
+    color: #cfcfcf;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #cfcfcf;
+    line-height: 44px;
+    text-align: center;
+    font-weight: 600;
+    background: transparent;
+}
+
+.owl-dot {
+    display: inline-block;
+    counter-increment: slides-num;
+    /* Increment counter */
+    margin-right: 5px;
+    background: transparent;
+}
+
+.owl-dot span {
+    display: none;
+    background: transparent;
+}
+
+.owl-dot.active:before {
+    content: counter(slides-num) "";
+    /* Use the same counter to get current item. */
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    position: absolute;
+    left: -80px;
+    top: 0;
+    color: #cfcfcf;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #cfcfcf;
+    line-height: 44px;
+    text-align: center;
+    font-weight: 600;
+    background: transparent;
+}
+
+.info {
+    text-align: center;
+    margin-top: 110px;
+}
+
+.navbar::before {
+    width: 67%;
+}
+
+.banner-animate-globe-img {
+    left: -220px;
+    transform: translate(0%, -50%);
+}
+
+
+/* RESPONSIVE CSS START */
+
+@media (min-width: 1700px) and (max-width: 1920px) {
+    .owl-nav {
+        transform: translate(-46%, -12.4vh);
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1698.9px) {
+    .owl-nav {
+        transform: translate(-48%, -12.4vh);
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+    .owl-nav {
+        transform: translate(-50%, -12.4vh);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .banner-animate-globe-img {
+        left: -150px;
+    }
+    .owl-nav {
+        transform: translate(-50%, -8.9vh);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .banner-animate-globe-img {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .info-box {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .banner-animate-globe-img {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
