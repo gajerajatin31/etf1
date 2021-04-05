@@ -2402,7 +2402,7 @@ h1 {
 
 /* --------------------------------------------------------------------------- images */
 .body {
-    background-image: url(/assets/img/image\ \(5\).png);
+    /* background-image: url(/assets/img/image\ \(5\).png); */
 }
 #universe {
     background-image: url(/assets/img/image\ \(4\).png);
