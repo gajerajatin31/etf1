@@ -12,6 +12,8 @@ import { InlineSVGModule } from 'ng-inline-svg';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CRUDTableModule } from '../_metronic/shared/crud-table';
 import { HttpClientModule } from '@angular/common/http';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 export const routes: Routes = [
   {
@@ -21,12 +23,20 @@ export const routes: Routes = [
   {
     path: 'formc',
     component: FormComponent
+  },
+  {
+    path: 'about-us',
+    component: AboutusComponent
+  },
+  {
+    path: 'contact-us',
+    component: ContactusComponent
   }
 ]
 
 
 @NgModule({
-  declarations: [HomeComponent, FormComponent],
+  declarations: [HomeComponent, FormComponent, AboutusComponent, ContactusComponent],
   imports: [
     CommonModule,
     OwlModule,
