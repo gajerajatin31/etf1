@@ -1,0 +1,309 @@
+.page-title.background-page {
+    background-image: url(../../../assets/img/smart1.jpg);
+}
+
+.page-title {
+    position: relative;
+    min-height: 300px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-title h2 span {
+    color: #00ac65;
+}
+
+.section-title h2 {
+    color: #000;
+}
+
+.page-title:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #283a6c;
+    opacity: 0.85;
+}
+
+.btn-group-vertical>.btn-group:after,
+.btn-group-vertical>.btn-group:before,
+.btn-toolbar:after,
+.btn-toolbar:before,
+.clearfix:after,
+.clearfix:before,
+.container-fluid:after,
+.container-fluid:before,
+.container:after,
+.container:before,
+.dl-horizontal dd:after,
+.dl-horizontal dd:before,
+.form-horizontal .form-group:after,
+.form-horizontal .form-group:before,
+.modal-footer:after,
+.modal-footer:before,
+.modal-header:after,
+.modal-header:before,
+.nav:after,
+.nav:before,
+.navbar-collapse:after,
+.navbar-collapse:before,
+.navbar-header:after,
+.navbar-header:before,
+.navbar:after,
+.navbar:before,
+.pager:after,
+.pager:before,
+.panel-body:after,
+.panel-body:before,
+.row:after,
+.row:before {
+    content: '';
+    display: table;
+}
+
+.page-title .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page-sec-title h1 {
+    margin-top: 150px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+}
+
+.title-shape::before,
+.title-shape::after {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #2dba25;
+    content: '';
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate( 45deg);
+    transform: rotate( 45deg);
+    left: 50%;
+    margin-left: -15px;
+    top: -13px;
+}
+
+.title-shape::after {
+    top: -6px;
+}
+
+.about-page.welcome-area .section-title {
+    margin-bottom: 40px;
+}
+
+.title-shape {
+    position: relative;
+    width: 200px;
+    margin: -7px auto 0;
+}
+
+.section-title h2 {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1.5;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.title-shape span:before {
+    left: 0;
+    margin-left: -15px;
+}
+
+.title-shape span:before,
+.title-shape span:after {
+    content: '';
+    background: #000000;
+    height: 2px;
+    width: 80px;
+    bottom: 0;
+    position: absolute;
+}
+
+.title-shape span:after {
+    right: 0;
+    margin-right: -5px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.tw-instruction {
+    width: 100%;
+    padding: 24px 32px 48px;
+    height: 100%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 15px 25px 0px rgb(0 0 0 / 7%);
+    background-size: 100%;
+    background-color: #fff;
+}
+
+.tw-instruction h4 {
+    font-weight: 800;
+    position: relative;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.service-line {
+    border-bottom: 2px solid #00ac65;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.tw-instruction p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.section-padding {
+    padding: 50px 0 50px 0;
+}
+
+.gray-bg {
+    background: #fafafa;
+}
+
+.help-text .title {
+    font-weight: 600;
+    color: #000;
+}
+
+.help-text h6 {
+    margin: 25px 0 15px 0;
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+}
+
+.contact p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.ticket-card {
+    margin: 50px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.contact .text-black {
+    color: #000;
+    font-weight: 500;
+}
+
+.contact h6 i {
+    width: 25px;
+    color: #4cb936;
+}
+
+.contact-info-area .contact-info span {
+    display: block;
+    color: #4cb936;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.contact-info-area .contact-info i {
+    display: inline-block;
+    font-size: 22px;
+    color: #4cb936;
+    margin-bottom: 10px;
+}
+
+.contact-area .formpart h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.contact-area .formpart p {
+    margin-bottom: 30px;
+}
+
+.contact-area .formpart .form-group label {
+    margin-bottom: 0;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: inline-block;
+    font-size: 17px;
+    color: #4cb936;
+}
+
+.contact-area .formpart .form-group .form-control {
+    height: 45px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    padding-left: 40px;
+    font-size: 15px;
+    border: 0;
+}
+
+.contact-area .formpart .form-group textarea {
+    height: auto !important;
+    // padding-top: 13px;
+}
+
+.contact-area .formpart .common-btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    opacity: 1;
+}
+
+.common-btn:hover {
+    color: #fff;
+    background: #001d4c;
+    // -webkit-transform: translate(0, -5px);
+    // transform: translate(0, -5px)
+}
+
+.common-btn {
+    color: #fff;
+    background: #4cb936;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.contact-area .formpart {
+    text-align: center;
+}
+
+.contact-info-area .contact-info a {
+    display: block;
+}
+
+.contact-info-area .contact-info a:hover {
+    color: #4cb936;
+}
+
+form {
+    text-align: center;
+    margin-top: 50px;
+}

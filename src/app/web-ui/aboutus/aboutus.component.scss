@@ -1,0 +1,185 @@
+.page-title.background-page {
+    background-image: url(../../../assets/img/smart1.jpg);
+}
+
+.page-title {
+    position: relative;
+    min-height: 300px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-title h2 span {
+    color: #00ac65;
+}
+
+.section-title h2 {
+    color: #000;
+}
+
+.page-title:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #283a6c;
+    opacity: 0.85;
+}
+
+.btn-group-vertical>.btn-group:after,
+.btn-group-vertical>.btn-group:before,
+.btn-toolbar:after,
+.btn-toolbar:before,
+.clearfix:after,
+.clearfix:before,
+.container-fluid:after,
+.container-fluid:before,
+.container:after,
+.container:before,
+.dl-horizontal dd:after,
+.dl-horizontal dd:before,
+.form-horizontal .form-group:after,
+.form-horizontal .form-group:before,
+.modal-footer:after,
+.modal-footer:before,
+.modal-header:after,
+.modal-header:before,
+.nav:after,
+.nav:before,
+.navbar-collapse:after,
+.navbar-collapse:before,
+.navbar-header:after,
+.navbar-header:before,
+.navbar:after,
+.navbar:before,
+.pager:after,
+.pager:before,
+.panel-body:after,
+.panel-body:before,
+.row:after,
+.row:before {
+    content: '';
+    display: table;
+}
+
+.page-title .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page-sec-title h1 {
+    margin-top: 150px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+}
+
+.title-shape::before,
+.title-shape::after {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #2dba25;
+    content: '';
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate( 45deg);
+    transform: rotate( 45deg);
+    left: 50%;
+    margin-left: -15px;
+    top: -13px;
+}
+
+.title-shape::after {
+    top: -6px;
+}
+
+.about-page.welcome-area .section-title {
+    margin-bottom: 40px;
+}
+
+.title-shape {
+    position: relative;
+    width: 200px;
+    margin: -7px auto 0;
+}
+
+.section-title h2 {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1.5;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.title-shape span:before {
+    left: 0;
+    margin-left: -15px;
+}
+
+.title-shape span:before,
+.title-shape span:after {
+    content: '';
+    background: #000000;
+    height: 2px;
+    width: 80px;
+    bottom: 0;
+    position: absolute;
+}
+
+.title-shape span:after {
+    right: 0;
+    margin-right: -5px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.tw-instruction {
+    width: 100%;
+    padding: 24px 32px 48px;
+    height: 100%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 15px 25px 0px rgb(0 0 0 / 7%);
+    background-size: 100%;
+    background-color: #fff;
+}
+
+.tw-instruction h4 {
+    font-weight: 800;
+    position: relative;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.service-line {
+    border-bottom: 2px solid #00ac65;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.tw-instruction p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.section-padding {
+    padding: 50px 0 50px 0;
+}
+
+.gray-bg {
+    background: #fafafa;
+}
