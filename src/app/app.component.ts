@@ -16,6 +16,9 @@ import { SplashScreenService } from './_metronic/partials/layout/splash-screen/s
 import { Router, NavigationEnd } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TableExtendedService } from './_metronic/shared/crud-table';
+// import { $ } from 'protractor';
+declare let $: any;
+
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'body[root]',
@@ -44,6 +47,9 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+
+
+
     const routerSubscription = this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // clear filtration paginations and others
@@ -65,5 +71,18 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.unsubscribe.forEach((sb) => sb.unsubscribe());
+  }
+  ngAfterViewInit() {
+    var $window = $(window);
+    $window.on('scroll', function () {
+      var scroll = $window.scrollTop();
+      if (scroll < 300) {
+        $(".sticky").removeClass("is-sticky");
+      } else {
+        $(".sticky").addClass("is-sticky");
+      }
+    });
+
+
   }
 }

@@ -65,7 +65,7 @@ a:active {
 
 .button_container.active .top {
     transform: translateY(11px) translateX(0) rotate(45deg);
-    background: #FFF;
+    background: #000;
 }
 
 .button_container.active .middle {
@@ -75,32 +75,60 @@ a:active {
 
 .button_container.active .bottom {
     transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: #FFF;
+    background: #000;
+}
+
+.button_container.active h4 {
+    color: #000 !important;
 }
 
 .button_container span {
     background: #0fa5d2;
     border: none;
-    height: 5px;
+    height: 3px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     transition: all 0.35s ease;
     cursor: pointer;
+    border-radius: 20px;
+}
+
+.button_container .middle {
+    width: 30px;
+}
+
+.button_container .bottom {
+    width: 20px;
+}
+
+.button_container.active .bottom {
+    width: 100%;
 }
 
 .button_container span:nth-of-type(2) {
     top: 11px;
+    /* width: 30px; */
 }
 
 .button_container span:nth-of-type(3) {
     top: 22px;
+    /* width: 20px; */
+}
+
+.middle {
+    width: 30px;
+}
+
+.button_container .active span.bottom,
+.button_container .active span.top {
+    color: #000;
 }
 
 .overlay {
     position: fixed;
-    background: #0fa5d2;
+    background: #fff;
     top: 0;
     left: 0;
     width: 100%;
@@ -113,7 +141,7 @@ a:active {
 }
 
 .overlay.open {
-    opacity: 0.9;
+    opacity: 1;
     visibility: visible;
     height: 100%;
 }
@@ -145,7 +173,7 @@ a:active {
     height: 70%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 50px;
+    /* font-size: 50px; */
     font-weight: 400;
     text-align: center;
 }
@@ -161,9 +189,9 @@ a:active {
 
 .overlay ul li {
     display: block;
-    height: 25%;
-    height: calc(100% / 4);
-    min-height: 50px;
+    /* height: 25%; */
+    /* height: calc(100% / 4); */
+    /* min-height: 50px; */
     position: relative;
     opacity: 0;
 }
@@ -171,10 +199,25 @@ a:active {
 .overlay ul li a {
     display: block;
     position: relative;
-    color: #FFF;
+    color: #7E8299;
     text-decoration: none;
     overflow: hidden;
+    font-size: 1.075rem;
     padding: 10px 10px 25px;
+}
+
+.card-body p {
+    font-size: 14px;
+}
+
+@media(min-width:320px) and (max-width:768px) {
+    .overlay nav {
+        height: 100vh;
+        overflow: scroll;
+    }
+    .button_container span {
+        background-color: #0fa5d2;
+    }
 }
 
 .overlay ul li a:hover:after,
@@ -280,12 +323,14 @@ a:active {
 }
 
 .banner-animate-globe-img {
-    width: 450px;
-    height: 450px;
+    width: 370px;
+    height: 370px;
     position: absolute;
     left: 50%;
     transform: translate(-105%, -50%);
     top: 50%;
+    border: 10px solid #ffffff;
+    border-radius: 50%;
 }
 
 .globe-particle-img {
@@ -388,7 +433,7 @@ a:active {
 .navbar::before {
     content: "";
     width: 67vw;
-    height: 100px;
+    /* height: 100px; */
     background: #fff;
     position: absolute;
     left: 0;
@@ -1107,10 +1152,10 @@ a:active {
         max-width: 1140px;
     }
     .slider-content h2 {
-        font-size: 60px;
+        font-size: 53px;
     }
     .slider-content h4 {
-        font-size: 40px;
+        font-size: 20px;
     }
     .slider-content {
         padding-right: 20em;
@@ -1946,7 +1991,7 @@ a:active {
 }
 
 #toggle h4 {
-    color: #fff;
+    color: #0fa5d2;
     font-size: 16px;
     position: relative;
     left: -60px;

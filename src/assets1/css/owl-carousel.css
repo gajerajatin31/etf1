@@ -122,12 +122,12 @@
 }
 
 .navbar::before {
-    width: 67%;
+    width: 100%;
 }
 
 .banner-animate-globe-img {
-    left: -220px;
-    transform: translate(0%, -50%);
+    left: -190px;
+    transform: translate(0%, -45%);
 }
 
 

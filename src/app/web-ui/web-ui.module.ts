@@ -14,6 +14,8 @@ import { CRUDTableModule } from '../_metronic/shared/crud-table';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { MenuComponent } from './menu/menu.component';
+import { LearnMoreComponent } from './learn-more/learn-more.component';
 
 export const routes: Routes = [
   {
@@ -31,12 +33,16 @@ export const routes: Routes = [
   {
     path: 'contact-us',
     component: ContactusComponent
+  },
+  {
+    path: 'learn-more',
+    component: LearnMoreComponent
   }
 ]
 
 
 @NgModule({
-  declarations: [HomeComponent, FormComponent, AboutusComponent, ContactusComponent],
+  declarations: [HomeComponent, FormComponent, AboutusComponent, ContactusComponent, MenuComponent, LearnMoreComponent],
   imports: [
     CommonModule,
     OwlModule,
