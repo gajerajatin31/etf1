@@ -68,6 +68,7 @@ export class FormComponent implements OnInit {
   cancel() {
     this.user = Object.assign({}, this.firstUserState);
     this.loadForm();
+    
   }
 
   getPic() {

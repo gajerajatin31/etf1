@@ -82,6 +82,23 @@ a:active {
     color: #000 !important;
 }
 
+.fab {
+    color: #fff;
+}
+
+.footer-social-icon ul li {
+    padding-right: 10px;
+}
+
+.footer {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-social-icon ul li a {
+    cursor: pointer;
+}
+
 .button_container span {
     background: #0fa5d2;
     border: none;
@@ -1063,8 +1080,8 @@ a:active {
     background: #0077b5;
 }
 
-.behance {
-    background: #053eff;
+.youtube {
+    background: #FF0000;
 }
 
 .insta {
