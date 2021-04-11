@@ -16,6 +16,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { MenuComponent } from './menu/menu.component';
 import { LearnMoreComponent } from './learn-more/learn-more.component';
+import { FooterComponent } from './footer/footer.component';
 
 export const routes: Routes = [
   {
@@ -42,7 +43,7 @@ export const routes: Routes = [
 
 
 @NgModule({
-  declarations: [HomeComponent, FormComponent, AboutusComponent, ContactusComponent, MenuComponent, LearnMoreComponent],
+  declarations: [HomeComponent, FormComponent, AboutusComponent, ContactusComponent, MenuComponent, LearnMoreComponent, FooterComponent],
   imports: [
     CommonModule,
     OwlModule,

@@ -41,3 +41,4 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.router.navigate(['/auth/login']);
   }
 }
+
